@@ -1,0 +1,175 @@
+/*styleSheet.css
+ *@Patryck Brenner
+ * 24th Nov 2020
+ */
+
+ * {
+	font-family: URW Chancery L, cursive; /* got this font-family on: https://www.w3.org/Style/Examples/007/fonts.en.html */
+    text-align: center;
+}
+ 
+section {
+	width: 90%;
+	height: auto;
+	margin: auto;
+	max-width: 1800px;
+    min-width: 400px;
+}
+
+
+/*------------------Header------------------*/
+
+#header{
+	margin: 0;
+    padding: 2%;
+    background-color: black;
+    font-size: 30px;
+    width: 100%;
+}
+
+#header a{
+	color: white;
+	text-decoration: none;
+}
+
+/*------------------Navegation menu------------------*/
+.topnav {
+	width: 100%;
+	float: left;
+	margin: 0;
+	padding: 1%;
+	background-color: #069;
+	border: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+}
+
+.topnav ul {
+	display: inline-block;
+}
+
+.topnav li {
+	list-style: none;
+	float: left; 
+		
+}
+
+.topnav li a {
+	display: block;
+	padding: 8px 15px;
+	text-decoration: none;
+	font-weight: bold;
+	color: white;
+	border-right: 1px solid #ccc;
+		
+}
+
+.topnav:Hover { 
+	color: #c00;
+	background-color: black;
+}
+/*------------------ About us ------------------*/
+
+.about_us {
+	padding: 1%;
+}
+
+.about_us h2 {
+	padding-bottom: 1%;
+	text-transform: uppercase;
+	border-bottom: 2px solid;
+}
+
+/*------------------ ------------------*/
+
+legend{
+	font-size:16px; 
+	font-weight:bold;
+	font-style:italic;
+    padding-bottom:10px;
+}
+
+.container{
+	width:100%;
+	margin: auto;
+	margin-top:8px;
+	padding: 1%;
+	font-size:18px;    
+    line-height:16px;
+}
+
+footer {
+    background-color: black;
+	color: white;
+    padding: 8px 0;
+	text-align: center;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+
+/*------------------Brings the form to the left and adds a padding to distanciate the rows of the form------------------*/
+.contact_details table,
+td {
+    text-align: left;
+    padding: 1%;
+}
+
+
+/*------------------Display the total price box in green when the function totalPrice() is called------------------*/
+.container div#totalPrice
+{
+	margin-top: 7px;
+    padding:12px;
+    font-weight:bold;
+    background-color:green;
+}
+
+
+/*Rest of the css I ended up not using from my last CA*/
+
+/*.container fieldset {
+	margin:10px;
+	padding:20px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.container legend{
+	font-size:16px;
+	font-family: URW Chancery L, cursive; /* got this font-family on: https://www.w3.org/Style/Examples/007/fonts.en.html 
+	font-weight:bold;
+	font-style:italic;
+    padding-bottom:10px;
+}
+
+.container label{
+	display:block;
+	font-size:12px;
+    font-weight:bold;
+}
+
+.container input#submit
+{
+margin:7px;
+padding-left:15px;
+padding-right:15px;
+padding-top:7px;
+padding-bottom:7px;
+}
+
+.container div#totalPrice
+{
+	margin-top: 7px;
+    padding:12px;
+    font-weight:bold;
+    background-color:green;
+}
+
+input[type=number]::-webkit-inner-spin-button { /*reference= https://stackoverflow.com/questions/26024771/styling-a-input-type-number 
+  opacity: 1;
+}
+*/

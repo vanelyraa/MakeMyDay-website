@@ -1,0 +1,85 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8"/>
+      <title> Make my Day </title>
+
+<link rel="stylesheet" href="MakeMyDay.css">
+
+</head>
+
+<body>
+
+<div class="header">
+<h1> Make my Day </h1>
+</div>
+
+<div class="topnav">
+  <a>Choose your day </a>
+  <a href="Adventure.asp">Adventure</a>
+  <a href="Historical.asp">Historical</a>
+  <a href="GameofThroness.asp">Game of Thrones</a>
+  <a hrf="Pub Crawl".asp>Pub Crawl</a>
+  <a hrf="Cultural".asp>Cultural</a>
+</div>
+
+<fieldset>
+  <div class="Select">
+  <form>
+    <label> Select your Day </label>
+    <select id="day" name="day" onchange="day()">
+    <option data-val-cost = "option">option...</option>
+    <option data-val-cost = "35">Adventure &euro;35p/p</option>
+    <option data-val-cost = "45">Historical &euro;45p/p</option>
+    <option data-val-cost = "50">Game of Thrones &euro;50 p/p</option>
+    <option data-val-cost = "25">Pub Crawl &euro;25p/p</option>
+    <option data-val-cost = "15">Cultural &euro;15p/p</option>
+  </select>
+</form>
+</div>
+
+<div>
+  <form>
+    <label> Number of people</label>
+    <select id="people" name="people" onchange="people()">
+    <option value = "0">0</option>
+    <option value = "1">1</option>
+    <option value = "2">2</option>
+    <option value = "3">3</option>
+    <option value = "4">4</option>
+    <option value = "5">5</option>
+  </select>
+</form>
+</div>
+
+<div>
+  <input type="button" id="Total" value="Total" onclick="CalculateTotalPrice()"/>
+</div>
+</fieldset>
+
+
+<div  class="content">
+  <h2><center> Looking for fun?<center></h2>
+<p> Looking for a day to remember for years to come? Are you visiting Ireland and want to seize every moment of your stay?
+  Are you tired of the hassle of planning activities?</p>
+<p>Leave it to us!</p>
+<p>In Make My Day we offer a wide variety of fun activities for all tastes and ages.
+  From visiting the outstanding sets of the acclaimed TV series Game of Thrones; discovering all the Irish culture through their rich and beautiful museums;
+  kayaking in the friendly waters of the Liffey River; or maybe you are just fancying a drink and a good party in the world-famous Irish pubs; we got you cover
+  with these and many more experiences.
+The only thing you got to do is choose the activity, the size of your group and we will do the rest, nice and easy.</p>
+<p> Get ready to enjoy a day that you will treasure for life.</p>
+
+
+<center>  <img src="DarkHedges.jpg" alt = "This is an image" width="300" height="300">
+  <img src="monolito.jpg" alt = "This is an image" width="300" height="300">
+  <img src="kayak.jpg" alt = "This is an image" width="300" height="300"></center>
+</id>
+</div>
+
+<script type="text/javascript" src="totalpa.js"></script>
+
+</body>
+
+</html>

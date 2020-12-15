@@ -1,0 +1,150 @@
+<!--
+ *contact us.html
+ *@Patryck Brenner
+ * 14th Dec 2020
+ *about us.html
+ *@Vanessa Lyra
+ * 14th Dec 2020
+ -->
+ 
+
+<!DOCTYPE html> 
+<html lang="en"> 
+<head>
+		
+	<meta charset="UTF-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>CONTACT US </title>
+	
+	<script src="js_external.js" type="text/javascript"></script>
+	<link href="styleSheet.css" rel="stylesheet" type="text/css" />
+	
+
+</head>
+
+<body onload="hideTotal()">
+
+	<section>
+		<header id="header">
+			<h1><a href="index.html"> Make my Day </a></h1>
+		</header>
+		
+		<div class="topnav">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Adventure</a></li>
+				<li><a href="#">Historical</a></li>
+				<li><a href="#">Game of Thrones</a></li>
+				<li><a href="#">About us</a></li>
+				<li><a href="contact_us.html">Contact us</a></li>
+			</ul>
+		</div>
+	
+	
+		<div class="container">			
+			<div id="content"
+				<h2><center> Looking for fun?<center></h2>
+				<p> Looking for a day to remember for years to come? Are you visiting Ireland and want to seize every moment of your stay?
+				Are you tired of the hassle of planning activities?</p>
+				<p>Leave it to us!</p>
+				<p>In Make My Day we offer a wide variety of fun activities for all tastes and ages.<br>
+				From visiting the outstanding sets of the acclaimed TV series Game of Thrones, discovering all the Irish culture through their rich and beautiful museums,<br>
+				kayaking in the friendly waters of the Liffey River; <br>
+				or maybe you are just fancying a drink and a good party in the world-famous Irish pubs, we got you cover
+				with these and many more experiences.<br>
+				The only thing you got to do is choose the activity, the size of your group and we will do the rest, nice and easy.</p>
+				<p>Why to choose us?
+				<br> Make my Day is not the traditional company, we are focused on selling experiences<br>
+				Our company is not just focused on people visitng the Emerald Island, but also for residents who are looking to have some extra fun or enjoy  different experiences</p>
+				
+				<p> Get ready to enjoy a day that you will treasure for life.</p>
+			</div>
+		
+			<center>  <img src="DarkHedges.jpg" alt = "This is an image" width="300" height="300">
+			<img src="monolito.jpg" alt = "This is an image" width="300" height="300">
+			<img src="kayak.jpg" alt = "This is an image" width="300" height="300"></center>
+			
+			<div class="about_us">
+				<h2> About Us</h2>
+				<p>The company started in 2020 with tree college friends who completely passioned about travelling who knew exactly how hard it is to plan a trip from the scratch 
+				specially with a tight schedule combining professional and student life. The idea of MakeMyDay is to offer interesting places, well planned trips to avoid those 
+				unforeseen problems that are constantly present travel wise and, above all, affordable.
+				Our philosophy is to offer excellent customer service guaranteed by an experienced and specialized team. We are divided in tree departments: Adventure, Historical and Game 
+				of Thrones sets.</p>
+				<p>Our vision is to enrichen and maximize our clients experience, providing the best leisure time.</p>
+				<p> Mission is to allow unforgettable moments with fair prices and quality.</p>
+			</div>
+			
+			<form id="contact_us" action="mailto:patryck_brenner@outlook.com" method="post"> 
+			<!-- we can create an email for us and put here instead of mine -->
+			
+			<div> 
+				<div id="contact_details">
+					<fieldset>
+						<table>
+							<legend> Start your trip now </legend>
+							<tr>
+								<td><label for="fullName"> Full Name: <label></td>
+								<td><input type="text" id="fullName" name="fullName" required/></td>
+							</tr>
+							
+							<tr>
+								<td><label for="email">Email: </label></td>
+								<td><input type="email" id="email" name="email" required placeholder="Enter a valid email address"/></td>
+							</tr>
+							
+							<tr>
+								<td><label for="phone"> Phone Number: </td>
+								<td><input type="text" id="phone" name="phone" /></td>
+							</tr>
+							
+							<tr>
+								<td><label for="trip"> Choose your trip: </label></td>
+								<td><select id="trip" name="trip" onchange="calculateTotal()" required>
+								<option value="">Value per person</option> 
+								<option value="adventure">Adventure (&euro;35.00)</option>
+								<option value="history">History(&euro;45.00)</option>
+								<option value="got">Game of Thrones Tour(&euro;50.00)</option>
+								</select></td>
+							</tr>
+							<tr>
+								<td><label for="numPeople"> Number of people (maximum 9 people): <label></td>
+								<td><input type="number" id="numPeople" name="numPeople" required min="1" max="9" onchange="calculateTotal()" /></td>
+							</tr>
+							
+							<tr>
+								<td colspan="2">Please enter your comments/queries in the area down below:</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+								<textarea rows="15" cols="80" placeholder="Your comments"></textarea>
+								</td>
+							</tr>
+							
+							
+							
+						</table>	
+						
+						<div id="totalPrice"></div>
+					</fieldset>
+				</div> <!--end of order_details-->
+				
+				<input type="submit" id="submit" value="Submit" onclick="calculateTotal()" />
+				
+	
+
+	
+			<div>
+			</form> <!-- end of the form-->
+		</div>	<!-- end of the container-->
+		
+		<footer>
+			<p> Copyright &copy; Footer content goes here</p>
+		</footer>
+		
+	</section>
+</body>
+
+</html>
