@@ -55,7 +55,7 @@ section {
 
 .topnav li a {
 	display: block;
-	padding: 8px 15px;
+	padding: 0 15px 0 10px;
 	text-decoration: none;
 	font-weight: bold;
 	color: white;
@@ -69,20 +69,12 @@ section {
 }
 /*------------------ About us ------------------*/
 
-.about_us {
-	padding: 1%;
-}
 
-.about_us h2 {
-	padding-bottom: 1%;
-	text-transform: uppercase;
-	border-bottom: 2px solid;
-}
+
 
 /*------------------ ------------------*/
 
 legend{
-	font-size:16px; 
 	font-weight:bold;
 	font-style:italic;
     padding-bottom:10px;
@@ -95,6 +87,12 @@ legend{
 	padding: 1%;
 	font-size:18px;    
     line-height:16px;
+}
+
+.container h2 {
+	padding-bottom: 1%;
+	text-transform: uppercase;
+	border-bottom: 2px solid;
 }
 
 footer {
