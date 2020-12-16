@@ -19,8 +19,8 @@
 	<title> What to do in Ireland </title>
 	
 	<script src="js_external.js" type="text/javascript"></script>
-	<link href="styleSheet.css" rel="stylesheet" type="text/css" />
-	
+	<!-- <link href="styleSheet.css" rel="stylesheet" type="text/css" />	-->
+	<link href="styleSheet_Patryck.css" rel="stylesheet" type="text/css" />
 
 </head>
 
@@ -63,11 +63,13 @@
 					
 					<p> Get ready to enjoy a day that you will treasure for life.</p>
 							
-		
-					<center>  <img src="images/DarkHedges.jpg" alt = "This is an image" width="300" height="300">
-					<img src="images/monolito.jpg" alt = "This is an image" width="300" height="300">
-					<img src="images/kayak.jpg" alt = "This is an image" width="300" height="300"></center>
-					
+				<div class="gallery">
+					<center>
+					<a href="images/DarkHedges.jpg"><img src="images/DarkHedges.jpg" alt = "This is an image" width="300" height="300"></a>
+					<a href="images/monolito.jpg"><img src="images/monolito.jpg" alt = "This is an image" width="300" height="300"></a>
+					<a href="images/kayak.jpg"><img src="images/kayak.jpg" alt = "This is an image" width="300" height="300"></a> 
+					</center>
+				</div>	
 				</fieldset>	
 			</div>
 			<div class="about_us">
@@ -88,7 +90,7 @@
 			
 			<div> 
 				<div id="contact_details">
-					<fieldset class="contact_field">
+					<!--<fieldset>-->
 						<table>
 							<legend> Start your trip now </legend>
 							<tr>
@@ -134,10 +136,11 @@
 						</table>	
 						
 						<div id="totalPrice"></div>
-					</fieldset>
+						<input type="submit" id="submit" value="Submit" onclick="calculateTotal()" />
+					<!--</fieldset>-->
 				</div> <!--end of order_details-->
 				
-				<input type="submit" id="submit" value="Submit" onclick="calculateTotal()" />
+				
 				
 	
 

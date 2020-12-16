@@ -60,6 +60,7 @@ section {
 	font-weight: bold;
 	color: white;
 	border-right: 1px solid #ccc;
+	transition: 0.5s;
 		
 }
 
@@ -139,20 +140,19 @@ footer {
 
 /*------------------ Form ------------------*/
 
-form {
 
+#contact_details{
+	display: inline-block;
+	text-align: center;
 	
 }
 
-.contact_details table,
+#contact_details table,
 td {
-    text-align: left;
+	text-align: left;
     padding: 1%;
-}
 
-fieldset.contact_field {
-	padding-left: 30%;
-    padding-right: 30%;
+
 }
 
 legend{

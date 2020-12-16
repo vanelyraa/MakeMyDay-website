@@ -33,23 +33,21 @@ section {
 }
 
 /*------------------Navegation menu------------------*/
+
 .topnav {
 	width: 100%;
-	float: left;
-	margin: 0;
 	padding: 1%;
 	background-color: #069;
 	border: 1px solid #ccc;
-	border-top: 1px solid #ccc;
 }
 
 .topnav ul {
-	display: inline-block;
+	display: flex;
 }
 
 .topnav li {
 	list-style: none;
-	float: left; 
+	padding: 1%;
 		
 }
 
@@ -60,17 +58,28 @@ section {
 	font-weight: bold;
 	color: white;
 	border-right: 1px solid #ccc;
+	position: relative;
+	transition: 1s;
 		
 }
 
-.topnav:Hover { 
-	color: #c00;
+.topnav li:Hover { 
+	transform: translateX(10%);
 	background-color: black;
 }
+
 /*------------------ Gallery ------------------*/
 
 
+.gallery img {
+	padding: 1%;
+	transition: 1s;
+}
 
+.gallery img:hover {
+	transform: translateX(5%);
+	
+}
 
 
 
@@ -142,20 +151,18 @@ footer {
 
 /*------------------ Form ------------------*/
 
-form {
-
+#contact_details{
+	display: inline-block;
+	text-align: center;
+	
 	
 }
 
-.contact_details table,
+#contact_details table,
 td {
-    text-align: left;
+	text-align: left;
     padding: 1%;
-}
 
-fieldset.contact_field {
-	padding-left: 30%;
-    padding-right: 30%;
 }
 
 legend{

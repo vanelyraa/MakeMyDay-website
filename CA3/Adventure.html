@@ -66,7 +66,7 @@
 				<!--reference for the text above: https://liveadventuretravel.com/walks-in-glendalough/ -->
 
 							
-				
+				<div class="gallery">
 					<center><video width="70%" height="40%" controls>
 					<source src="video/adventure.mp4" type="video/mp4">
 					<source src="video/adventure.ogg" type="video/ogg">
@@ -78,12 +78,16 @@
 					</video></center>
 					
 					<fieldset>
-						<center>  <img src="images/Glendalough1.jpeg" alt = "This is an image" width="300" height="300">
-						<img src="images/Glendalough3.jpg" alt = "This is an image" width="300" height="300">
-						<img src="images/Glendalough5.jpeg" alt = "This is an image" width="300" height="300">
-						<img src="images/Glendalough4.jpg" alt = "This is an image" width="300" height="300"></center>
+						
+							<center>
+							<a href="images/Glendalough1.jpeg"><img src="images/Glendalough1.jpeg" alt = "This is an image" width="300" height="300"></a>
+							<a href="images/Glendalough3.jpg"><img src="images/Glendalough3.jpg" alt = "This is an image" width="300" height="300"><a/>
+							<a href="images/Glendalough5.jpeg"><img src="images/Glendalough5.jpeg" alt = "This is an image" width="300" height="300"></a>
+							<a href="images/Glendalough4.jpg"><img src="images/Glendalough4.jpg" alt = "This is an image" width="300" height="300"></a>
+							</center>
+							
 					</fieldset>
-					
+				</div>	
 					
 				</fieldset>	
 					
@@ -93,7 +97,7 @@
 			
 			<div> 
 				<div id="contact_details">
-					<fieldset class="contact_field">
+					<!--<fieldset class="contact_field">-->
 						<table>
 							<legend> Start your trip now </legend>
 							<tr>
@@ -139,10 +143,11 @@
 						</table>	
 						
 						<div id="totalPrice"></div>
-					</fieldset>
+						<input type="submit" id="submit" value="Submit" onclick="calculateTotal()" />
+					<!--</fieldset>-->
 				</div> <!--end of order_details-->
 				
-				<input type="submit" id="submit" value="Submit" onclick="calculateTotal()" />
+				
 				
 	
 
