@@ -167,6 +167,7 @@ footer {
 }
 
 legend{
+	text-transform: uppercase;
 	font-weight:bold;
 	font-style:italic;
 	padding-bottom:10px;
