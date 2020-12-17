@@ -5,7 +5,11 @@
 
  * {
 	font-family: URW Chancery L, cursive; /* got this font-family on: https://www.w3.org/Style/Examples/007/fonts.en.html */
-    text-align: center;
+	text-align: center;
+}
+
+body {
+	background-color: #f5f1ee;
 }
  
 section {
@@ -13,7 +17,7 @@ section {
 	height: auto;
 	margin: auto;
 	max-width: 1800px;
-    min-width: 400px;
+    	min-width: 400px;
 }
 
 
@@ -21,16 +25,10 @@ section {
 
 #header{
 	margin: 0;
-    padding: 2%;
-    background-color: black;
-    font-size: 30px;
-    width: 100%;
+	padding: 2%;
+	width: 100%;
 }
 
-#header a{
-	color: white;
-	text-decoration: none;
-}
 
 /*------------------Navegation menu------------------*/
 
@@ -64,20 +62,26 @@ section {
 }
 
 .topnav li:Hover { 
-	transform: translateX(10%);
-	background-color: black;
+	transform: scale(1.2);
+
 }
+
+#page_active {
+	transform: scale(1.5);
+}
+
 
 /*------------------ Gallery ------------------*/
 
 
 .gallery img {
 	padding: 1%;
-	transition: 1s;
+	transition: 0.5s;
+	box-shadow: 0px 0px 3px 0px #888888;
 }
 
 .gallery img:hover {
-	transform: translateX(5%);
+	transform: scale(1.2);
 	
 }
 
@@ -91,7 +95,7 @@ section {
 	margin-top:8px;
 	padding: 1%;
 	font-size:18px;    
-    line-height:16px;
+	line-height:16px;
 }
 
 /*------------------ Header for the page introduction ------------------*/
@@ -106,46 +110,44 @@ section {
 .container fieldset {
 	margin:10px;
 	padding:20px;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -khtml-border-radius: 10px;
-    border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	border-radius: 10px;
 }
 
 
 /*------------------ Makes the submit buttom bigger and nicer ------------------*/
 
-.container input#submit
-{
-margin:7px;
-padding-left:15px;
-padding-right:15px;
-padding-top:7px;
-padding-bottom:7px;
+.container input#submit {
+	margin:7px;
+	padding-left:15px;
+	padding-right:15px;
+	padding-top:7px;
+	padding-bottom:7px;
 }
 
 
 
 /*------------------Display the total price box in green when the function totalPrice() is called------------------*/
-.container div#totalPrice
-{
+.container div#totalPrice{
 	margin-top: 7px;
-    padding:12px;
-    font-weight:bold;
-    background-color:green;
+	padding:12px;
+	font-weight:bold;
+	background-color:green;
 }
 
 /*------------------ Footer ------------------*/
 
 footer {
-    background-color: black;
-	color: white;
-    padding: 8px 0;
+	background-color: #f5f1ee;
+	color: black;
+	padding: 8px 0;
 	text-align: center;
-    margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
 }
 
 
@@ -158,17 +160,15 @@ footer {
 	
 }
 
-#contact_details table,
-td {
+#contact_details table td {
 	text-align: left;
-    padding: 1%;
-
+	padding: 1%;
 }
 
 legend{
 	font-weight:bold;
 	font-style:italic;
-    padding-bottom:10px;
+	padding-bottom:10px;
 }
 
 /*------------------ Add more stuff here, we still need to do the @media stuff ------------------*/
