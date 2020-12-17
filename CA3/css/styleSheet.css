@@ -3,9 +3,13 @@
  * 24th Nov 2020
  */
 
- * {
+  * {
 	font-family: URW Chancery L, cursive; /* got this font-family on: https://www.w3.org/Style/Examples/007/fonts.en.html */
     text-align: center;
+}
+
+body {
+	background-color: #f5f1ee;
 }
  
 section {
@@ -22,34 +26,28 @@ section {
 #header{
 	margin: 0;
     padding: 2%;
-    background-color: black;
-    font-size: 30px;
     width: 100%;
 }
 
-#header a{
-	color: white;
-	text-decoration: none;
-}
+
 
 /*------------------Navegation menu------------------*/
+
 .topnav {
 	width: 100%;
-	float: left;
-	margin: 0;
 	padding: 1%;
 	background-color: #069;
 	border: 1px solid #ccc;
-	border-top: 1px solid #ccc;
+	
 }
 
 .topnav ul {
-	display: inline-block;
+	display: flex;
 }
 
 .topnav li {
 	list-style: none;
-	float: left; 
+	padding: 1%;
 		
 }
 
@@ -60,16 +58,33 @@ section {
 	font-weight: bold;
 	color: white;
 	border-right: 1px solid #ccc;
-	transition: 0.5s;
+	position: relative;
+	transition: 1s;
 		
 }
 
-.topnav:Hover { 
-	color: #c00;
-	background-color: black;
-}
-/*------------------ About us ------------------*/
+.topnav li:Hover { 
+	transform: scale(1.2);
 
+}
+
+#page_active {
+	transform: scale(1.5);
+}
+
+/*------------------ Gallery ------------------*/
+
+
+.gallery img {
+	padding: 1%;
+	transition: 0.5s;
+	box-shadow: 0px 0px 3px 0px #888888;
+}
+
+.gallery img:hover {
+	transform: scale(1.2);
+	
+}
 
 
 
@@ -102,6 +117,7 @@ section {
     border-radius: 10px;
 }
 
+
 /*------------------ Makes the submit buttom bigger and nicer ------------------*/
 
 .container input#submit
@@ -127,8 +143,8 @@ padding-bottom:7px;
 /*------------------ Footer ------------------*/
 
 footer {
-    background-color: black;
-	color: white;
+    background-color: #f5f1ee;
+	color: black;
     padding: 8px 0;
 	text-align: center;
     margin-top: 10px;
@@ -140,22 +156,21 @@ footer {
 
 /*------------------ Form ------------------*/
 
-
 #contact_details{
 	display: inline-block;
 	text-align: center;
 	
+	
 }
 
-#contact_details table,
-td {
+#contact_details table td {
 	text-align: left;
     padding: 1%;
-
 
 }
 
 legend{
+	text-transform: uppercase;
 	font-weight:bold;
 	font-style:italic;
     padding-bottom:10px;
