@@ -1,2 +1,1 @@
-HTML, CSS, JavaScript, JQuery, Bootstrap. 
-Responsive website developed for a fictional travel agency.
+Use of Markup Validation Service (https://validator.w3.org).
